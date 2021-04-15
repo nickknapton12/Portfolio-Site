@@ -1,0 +1,145 @@
+.App {
+  height: 200vh;
+  width: 100vw;  
+  background-image: url(../images/background.jpg);
+  background-attachment:fixed;
+  background-size: cover;
+  
+}
+
+body{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1{
+  font-size: 27px;
+  margin: 0;
+}
+h2{
+  margin: 0;
+}
+h3{
+  margin:0;
+}
+p{
+  margin:0;
+}
+a{
+  text-decoration: none;
+}
+
+#page1{
+  height: 100vh;
+}
+
+.backgroundNav{
+  width: 100vw;
+  height: 8vh;
+  background-color: rgb(2,2,0);
+  position: fixed;
+}
+
+.header{
+  width: 95vw;
+  display: grid;
+  position: fixed;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100vw;
+}
+
+.pageHeader{
+  margin: 4% 0 0 7%;
+  margin-right: 0;
+  color:rgb(0, 203, 253);
+  font-family: 'Audiowide';
+  font-weight: 300;
+  width: fit-content;
+  height: fit-content;
+}
+
+.menu{
+  margin: 4% 7% 0 0;
+  justify-self: end;
+}
+
+.menuHeader{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: end;
+  color: rgb(0, 203, 253);
+  font-weight: 300;
+  font-family: 'Audiowide', cursive;
+  margin: 0 0 0 0;
+}
+
+.menuCircle{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 203, 253);
+  margin: 0 0 0 0;
+}
+
+#upIcon{
+  width: fit-content;
+  color: rgb(0, 203, 253);
+  font-size: 100px;
+  transform: scaleX(1.3);
+  margin: auto auto auto 47.2%;
+  cursor: pointer;
+}
+
+#downIcon{
+  width: fit-content;
+  color: rgb(0, 203, 253);
+  font-size: 100px;
+  transform: scaleX(1.3);
+  margin: 9% auto 0 47.2%;
+  cursor: pointer;
+}
+
+#prevPage{
+  margin: 0 0 0 0;
+  justify-self: center;
+}
+
+#page2{
+  width: 100vw;
+  height: 100vh;
+}

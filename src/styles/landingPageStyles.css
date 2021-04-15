@@ -1,0 +1,49 @@
+.landingPageHeader{
+    color:white;
+    font-size: 62px;
+    font-family: 'Audiowide';
+    padding: 200px 0 0 12%;
+    font-weight: 400;
+}
+
+.landingPageSubHeader{
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 8px 0 0 12%;
+    font-family: 'Abel', sans-serif;
+
+}
+
+.introContainer{
+    width: 40%;
+    margin: 10vh 0 0 12%;
+    display: flex;
+    justify-content: start;
+}
+
+#atIcon{
+    grid-area: theIcon;
+    width: fit-content;
+    color: rgb(0, 203, 253);
+    font-size: 40px;
+}
+
+#school{
+    grid-area: university;
+    padding:0 0 0 3%;
+}
+
+.landingPageDescription{
+    width: 40%;
+    margin: 1vh 0 0 12%;
+    color: white;
+}
+
+#resume{
+    padding: 0;
+    margin: 1.5vh 0 0 12%;
+    color: rgb(0, 203, 253);
+    font-family: 'Audiowide';
+    font-weight: 400;
+}
