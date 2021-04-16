@@ -1,5 +1,5 @@
 .App {
-  height: 200vh;
+  height: 400vh;
   width: 100vw;
   background-image: url(../images/background.jpg);
   background-attachment: fixed;
@@ -67,6 +67,18 @@ a {
   width: 100vw;
   height: 100vh;
 }
+#page2 {
+  width: 100vw;
+  height: 100vh;
+}
+#page3 {
+  width: 100vw;
+  height: 100vh;
+}
+#page4 {
+  width: 100vw;
+  height: 100vh;
+}
 
 .backgroundNav {
   width: 100vw;
@@ -77,17 +89,45 @@ a {
 
 .navBar {
   width: 15vw;
-  height: 100vh;
-  margin: 0 0 0 0;
-  background-color: rgb(163, 162, 162);
+  position: fixed;
+  height: 92vh;
+  top: 8vh;
+  margin: 0 0 0 85vw;
+  background-color: black;
   transform: translateX(100%);
-  transition: transform 0.5s ease-in;
+  transition: transform 0.4s ease-in;
+  display: flex;
+  flex-direction: column;
+}
+
+.navItem{
+  color:white;
+  margin: 0 auto 10% auto;
+  font-family: 'Abel', sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+  transform: translateX(250%);
+  transition: transform 0.53s ease-in;
+  cursor: pointer;
+}
+
+.navItem:hover{
+  color:rgb(0, 203, 253);
+  transition: 0.7s;
+}
+
+#navItem1{
+  margin: 30% auto 10% auto;
+}
+
+.navSlide{
+  transform: translateX(0);
 }
 
 .header {
   display: grid;
   position: fixed;
-  grid-template-columns:  42.5vw 42.5vw 15vw;
+  grid-template-columns:  1fr 1fr;
   width: 100vw;
 }
 
@@ -95,17 +135,17 @@ a {
   margin: 4% 0 0 7%;
   margin-right: 0;
   color: rgb(0, 203, 253);
-  font-family: "Audiowide";
+  font-family: "Audiowide", sans-serif;
   font-weight: 300;
   width: fit-content;
   height: fit-content;
 }
 
 .menu {
-  margin: 4% 3% 0 0;
+  margin: 6% 10.7% 0 20vw;
   justify-self: end;
-  transform: translateX(350%);
-  transition: transform 0.5s ease-in;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in;
   cursor: pointer;
 }
 
@@ -114,13 +154,15 @@ a {
 }
 
 .menuHeader {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
   text-align: end;
   color: rgb(0, 203, 253);
   font-weight: 300;
   font-family: "Audiowide", cursive;
   margin: 0 0 0 0;
+}
+
+.menuRotate{
+  transform: rotate(0deg);
 }
 
 .menuCircle {
@@ -152,9 +194,4 @@ a {
 #prevPage {
   margin: 0 0 0 0;
   justify-self: center;
-}
-
-#page2 {
-  width: 100vw;
-  height: 100vh;
 }
