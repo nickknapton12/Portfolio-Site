@@ -1,8 +1,14 @@
 import "./styles/App.css";
 import LandingPage from "./pages/LandingPage.js";
-import React from "react";
+import ProjectPage from "./pages/ProjectPage";
+import React, { useRef } from "react";
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+
   scrollDown(id) {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   }
@@ -14,14 +20,14 @@ class App extends React.Component {
     document.querySelectorAll(".navItem").forEach((classItem, index) => {
       setTimeout(() => {
         classItem.classList.toggle("navSlide");
-      }, 100 + (index*110));
+      }, 100 + index * 110);
     });
   }
 
   render() {
     return (
-      <div className="App" onScroll={this.scrollDown}>
-        <div id="page1">
+      <div className="App">
+        <div className="nav">
           <div className="navBar">
             <h2
               className="navItem"
@@ -50,38 +56,16 @@ class App extends React.Component {
               </div>
             </div>
           </div>
+        </div>
+        <div id="page1">
           <LandingPage />
-          <i
-            className="material-icons"
-            id="downIcon"
-            onClick={() => this.scrollDown("page2")}
-          >
-            keyboard_arrow_down
-          </i>
         </div>
         <div id="page2">
-          <i
-            class="material-icons"
-            id="upIcon"
-            onClick={() => this.scrollDown("page1")}
-          >
-            keyboard_arrow_up
-          </i>
-          <h1 className="pageHeader">P2</h1>
-          <i
-            class="material-icons"
-            id="downIcon"
-            onClick={() => this.scrollDown("page2")}
-          >
-            keyboard_arrow_down
-          </i>
+           <h2 className="landingPageHeaderType2">Projects</h2>
+          <ProjectPage />
         </div>
-        <div id="page3">
-
-        </div>
-        <div id="page4">
-
-        </div>
+        <div id="page3"></div>
+        <div id="page4"></div>
       </div>
     );
   }

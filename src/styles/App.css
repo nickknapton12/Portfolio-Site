@@ -6,8 +6,8 @@
   background-size: cover;
 }
 
+
 body {
-  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -59,7 +59,7 @@ h3 {
 p {
   margin: 0;
 }
-a {
+a{
   text-decoration: none;
 }
 
@@ -69,7 +69,8 @@ a {
 }
 #page2 {
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  padding-top: 4%;
 }
 #page3 {
   width: 100vw;
@@ -80,6 +81,11 @@ a {
   height: 100vh;
 }
 
+.nav{
+  position: absolute;
+  z-index: 100;
+}
+
 .backgroundNav {
   width: 100vw;
   height: 8vh;
@@ -88,11 +94,11 @@ a {
 }
 
 .navBar {
-  width: 15vw;
+  width: 14vw;
   position: fixed;
   height: 92vh;
   top: 8vh;
-  margin: 0 0 0 85vw;
+  margin: 0 0 0 86vw;
   background-color: black;
   transform: translateX(100%);
   transition: transform 0.4s ease-in;
@@ -142,7 +148,7 @@ a {
 }
 
 .menu {
-  margin: 6% 10.7% 0 20vw;
+  margin: 6% 9.8% 0 20vw;
   justify-self: end;
   transform: rotate(90deg);
   transition: transform 0.3s ease-in;

@@ -1,0 +1,56 @@
+.project{
+    width: 50vw;
+    height: 18vh;
+    display: grid;
+    top: 20%;
+    padding: 4% 0 0 5%;
+    grid-template-columns: 1fr 2.2fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:"image title"
+                         "image description";
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 1s ease-in;
+}
+
+.landingPageHeaderType2{
+    color:white;
+    font-size: 62px;
+    font-family: 'Audiowide';
+    padding: 20px 0 0 12%;
+    font-weight: 400;
+}
+
+.projectTitle{
+    margin: 0 0 0 4%;
+    grid-area: title;
+    padding: 0 0 0 0;
+    color:rgb(0, 203, 253);
+}
+
+.githubLink{
+    color:rgb(0, 203, 253);
+}
+
+.projectimg{
+    height: 100%;
+    width: 100%;
+    grid-area: image;
+    object-fit: cover;
+    border: 1px solid white;
+}
+
+.projectDescription{
+    grid-area: description;
+    margin: 0 0 0 4%;
+    color:white;
+}
+
+.prog1{
+    transform: translateX(-100%);
+    transition: transform 3s ease-in;
+}
+
+.progSlide{
+    transform: translateX(0);
+}
