@@ -107,7 +107,7 @@ a {
   font-size: 35px;
   font-weight: 300;
   transform: translateX(250%);
-  transition: transform 0.53s ease-in;
+  transition: transform 0.5s ease-in;
   cursor: pointer;
 }
 

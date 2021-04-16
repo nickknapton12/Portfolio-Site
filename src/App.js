@@ -11,8 +11,10 @@ class App extends React.Component {
     console.log("menu");
     document.querySelector(".navBar").classList.toggle("nav-active");
     document.querySelector(".menu").classList.toggle("menuRotate");
-    document.querySelectorAll(".navItem").forEach((classItem) => {
-      classItem.classList.toggle("navSlide");
+    document.querySelectorAll(".navItem").forEach((classItem, index) => {
+      setTimeout(() => {
+        classItem.classList.toggle("navSlide");
+      }, 100 + (index*110));
     });
   }
 
