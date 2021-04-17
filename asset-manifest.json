@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.91f8b0d0.chunk.css",
+    "main.js": "/static/js/main.c8169ac4.chunk.js",
+    "main.js.map": "/static/js/main.c8169ac4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.42da995e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.42da995e.js.map",
+    "static/js/2.640aa71c.chunk.js": "/static/js/2.640aa71c.chunk.js",
+    "static/js/2.640aa71c.chunk.js.map": "/static/js/2.640aa71c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.91f8b0d0.chunk.css.map": "/static/css/main.91f8b0d0.chunk.css.map",
+    "static/js/2.640aa71c.chunk.js.LICENSE.txt": "/static/js/2.640aa71c.chunk.js.LICENSE.txt",
+    "static/media/DiscordBot.b56c33a9.JPG": "/static/media/DiscordBot.b56c33a9.JPG",
+    "static/media/NicholasKnapton.25be9332.pdf": "/static/media/NicholasKnapton.25be9332.pdf",
+    "static/media/App.css": "/static/media/background.8289cd29.jpg",
+    "static/media/fantasyLeaguePic.ac4530aa.JPG": "/static/media/fantasyLeaguePic.ac4530aa.JPG",
+    "static/media/sudokuPic.19b398e3.JPG": "/static/media/sudokuPic.19b398e3.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.42da995e.js",
+    "static/js/2.640aa71c.chunk.js",
+    "static/css/main.91f8b0d0.chunk.css",
+    "static/js/main.c8169ac4.chunk.js"
+  ]
+}
