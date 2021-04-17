@@ -1,0 +1,22 @@
+.technologiesPage{
+    margin: 3% 0 0 8%;
+    display: grid;
+    width: 50vw;
+    height: 60vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 50px;
+
+}
+
+.icon{
+    height: 100%;
+    opacity: 0;
+    transition: 3s;
+}
+
+.showIcon{
+    opacity: 1;
+}

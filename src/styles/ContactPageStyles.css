@@ -1,8 +1,8 @@
-.landingPageHeader{
+.ContactPageHeader{
     color:white;
     font-size: 62px;
     font-family: 'Audiowide';
-    padding: 200px 0 0 12%;
+    padding:  150px 0 0 12%;
     font-weight: 400;
 }
 
@@ -21,6 +21,10 @@
     justify-content: start;
 }
 
+#contactContainSmall{
+    margin: 3vh 0 0 12%;
+}
+
 #atIcon{
     grid-area: theIcon;
     width: fit-content;
@@ -37,7 +41,6 @@
     width: 40%;
     margin: 1vh 0 0 12%;
     color: white;
-    font-size: 17px;
 }
 
 #resume{
@@ -50,4 +53,8 @@
 
 #firstProject{
     padding: 8% 0 0 5%;
+}
+
+.githubIcon{
+    width: 40px;
 }

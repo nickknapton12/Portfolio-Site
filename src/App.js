@@ -1,6 +1,8 @@
 import "./styles/App.css";
 import LandingPage from "./pages/LandingPage.js";
 import ProjectPage from "./pages/ProjectPage";
+import TechnologiesPage from './pages/TechnologiesPage'
+import ContactPage from './pages/ContactPage'
 import React, { useRef } from "react";
 
 class App extends React.Component {
@@ -64,8 +66,13 @@ class App extends React.Component {
            <h2 className="landingPageHeaderType2">Projects</h2>
           <ProjectPage />
         </div>
-        <div id="page3"></div>
-        <div id="page4"></div>
+        <div id="page3">
+          <h2 className="landingPageHeaderType2">Technologies and Tools</h2>
+          <TechnologiesPage />
+        </div>
+        <div id="page4">
+          <ContactPage />
+        </div>
       </div>
     );
   }

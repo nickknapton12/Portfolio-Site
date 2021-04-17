@@ -1,13 +1,16 @@
 import "../styles/landingPageStyles.css";
 import React from 'react';
+import { animated, Spring } from 'react-spring';
+import resume from '../images/NicholasKnapton.pdf';
 
-class LandingPage extends React.Component {
-    componentDidMount(){
-    }
-
-  render() {
+function LandingPage() {
     return (
-      <div>
+    <Spring
+      config={{ duration:2500 }}
+      from={{ opacity: 0 }}
+      to={{ opacity: 1 }}
+    >{props => (
+      <animated.div style={props}>
         <h2 className="landingPageHeader">Nicholas Knapton</h2>
         <h3 className="landingPageSubHeader">
           A
@@ -26,26 +29,19 @@ class LandingPage extends React.Component {
         </div>
 
         <p className="landingPageDescription">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a
-          commodo nisl. Aliquam dapibus est porttitor orci aliquam, sit amet
-          congue erat accumsan. Maecenas volutpat, purus et venenatis facilisis,
-          risus tortor porta felis, non ultrices velit lectus ut sapien. Donec
-          volutpat congue ante. Vivamus laoreet felis at lacus molestie viverra
-          eget id nibh. Aenean quis neque dapibus, luctus magna nec, pharetra
-          libero. Maecenas laoreet metus vitae elit consectetur lobortis. Mauris
-          posuere arcu non tellus dictum, at ornare nunc ornare. Quisque sit
-          amet massa condimentum, posuere lectus eget, tincidunt justo. In ut
-          lobortis dolor. Nulla sit amet nibh dui. Sed vel libero tortor.
-          Maecenas eu augue id orci varius auctor id eu lorem.
+        Hey! Im currently a student at the University of Calgary, studying Software Engineering and taking a minor in Biomedical Engineering. 
+        I have a passion for learning new technologies, and excell in group and solo settings. I was raised in Whistler BC, and enjoy Mountain 
+        Biking in my free time. If you have made it this far feel free to contact me whenever! Currently I am looking for 2021 Summer Internships 
+        as I am still in university, however I am open to other oportunities.
         </p>
-        <a href="#">
+        <a target="_blank" href={resume}>
           <h3 className="landingPageSubHeader" id="resume">
             Resume
           </h3>
         </a>
-      </div>
+      </animated.div>
+    )}</Spring>
     );
-  }
 }
 
 export default LandingPage;
