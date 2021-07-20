@@ -1,7 +1,7 @@
 import "../styles/landingPageStyles.css";
 import React from 'react';
 import { animated, Spring } from 'react-spring';
-import resume from '../images/NicholasKnapton.pdf';
+import resume from '../images/NicholasKnapton1.pdf';
 
 function LandingPage() {
     return (

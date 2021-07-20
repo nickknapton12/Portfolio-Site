@@ -1,7 +1,7 @@
 import "../styles/ContactPageStyles.css";
 import React from 'react';
 import { animated, Spring } from 'react-spring';
-import resume from '../images/NicholasKnapton.pdf';
+import resume from '../images/NicholasKnapton1.pdf';
 
 function ContactPage() {
     return (
